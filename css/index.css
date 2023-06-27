@@ -5,14 +5,21 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   z-index: 100;
 }
 
-/* Nav */
 .header-cont {
   height: 70px;
   transform: rotate(-180deg);
+}
+
+.header-cont .container {
+  background-color: yellowgreen;
+}
+
+.util-menu2 .container {
+  background-color: silver;
 }
 
 .header-cont .logo {
