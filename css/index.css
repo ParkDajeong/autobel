@@ -14,14 +14,6 @@ header {
   transform: rotate(-180deg);
 }
 
-.header-cont .container {
-  background-color: yellowgreen;
-}
-
-.util-menu2 .container {
-  background-color: silver;
-}
-
 .header-cont .logo {
   float: left;
   transform: translateY(50%);
