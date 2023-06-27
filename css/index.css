@@ -1,4 +1,4 @@
-/* ===== Header ===== */
+/* ===== HEADER ===== */
 header {
   background-color: #fff;
   transform: rotate(180deg);
@@ -11,7 +11,6 @@ header {
 
 /* Nav */
 .header-cont {
-  /* background-color: chartreuse; */
   height: 70px;
   transform: rotate(-180deg);
 }
@@ -28,7 +27,6 @@ nav {
 }
 
 .gnb {
-  /* background-color: azure; */
   float: left;
 }
 
@@ -73,14 +71,11 @@ nav {
   top: 50%;
   right: 0;
   transform: translateY(-50%);
-  /* background-color: darkturquoise; */
 }
 
 .util-menu li {
   float: left;
   margin: 0 5px;
-  /* outline: 1px solid red; */
-  
 }
 
 .util-menu .srch {
@@ -123,7 +118,6 @@ nav {
 
 /* Util Menu 2 */
 .util-menu2 {
-  /* background-color: whitesmoke; */
   height: 40px;
   font-size: 12px;
   border-bottom: 1px solid #DBDEE3;
@@ -646,10 +640,6 @@ main {
 }
 
 /* ===== Sell Section ===== */
-.sell-sec {
-  
-}
-
 .sell-box {
   width: 100%;
   height: 200px;

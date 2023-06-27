@@ -27,10 +27,6 @@
   border-radius: 20px;
 }
 
-.logo {
-
-}
-
 .logo a {
   display: inline-block;
   width: 87px;
@@ -84,7 +80,6 @@
 }
 
 .card-thumb {
-  /* background-color: #007aff; */
   position: relative;
   width: 100%;
 }
