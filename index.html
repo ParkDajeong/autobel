@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>현대글로비스 오토벨</title>
+  <!-- Font - Roboto, Noto Sans KR -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <header>
+    <div class="header-cont">
+      <div class="container clear">
+        <h1 class="logo">
+          <a href="#">
+            <img src="assets/h1-logo-glovis-k.png" alt="오토벨">
+          </a>
+        </h1> <!-- //logo -->
+        <nav class="clear">
+          <h2 class="blind">주메뉴</h2>
+          <ul class="gnb gnb-main clear">
+            <li><a href="#">내차사기</a></li>
+            <li><a href="#">내차팔기</a></li>
+          </ul>
+          <ul class="gnb gnb-sub clear">
+            <li><a href="#">오토벨 소개</a></li>
+            <li><a href="#">이벤트</a></li>
+            <li><a href="#">스마트옥션</a></li>
+          </ul>
+        </nav> <!-- //nav -->
+        <ul class="util-menu">
+          <li class="srch">
+            <span>차량검색 하러가기</span>
+            <button type="button">
+              <span class="blind">검색</span>
+            </button>
+          </li>
+          <li class="alarm">
+            <button type="button">
+              <span class="blind">알림</span>
+            </button>
+          </li>
+          <li class="fav">
+            <button type="button">
+              <span class="blind">관심차량</span>
+            </button>
+          </li>
+          <li class="menu">
+            <button type="button">
+              <span class="blind">메뉴 펼치기</span>
+            </button>
+          </li>
+        </ul> <!-- //util-menu -->
+      </div> <!-- //container -->
+    </div> <!-- //header-cont -->
+    <div class="util-menu2">
+      <div class="container">
+        <ul class="util-user clear">
+          <li><a href="#">로그인</a></li>
+          <li><a href="#">회원가입</a></li>
+          <li class="util-cs">
+            <button type="button">고객센터</button>
+            <ul>
+              <li><a href="#">공지사항</a></li>
+              <li><a href="#">1:1상담</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div> <!-- //util-menu2 -->
+  </header> <!-- //header -->
+  <main>
+    <section class="main-visual">
+      <h2 class="blind">메인 배너 슬라이드</h2>
+      <div class="container">
+        <div class="banner">
+          <div class="banner-box">
+            <img src="assets/banner/banner01.png" alt="">
+            <p class="blind">
+              <strong class="blind">오토벨 방문견적 이벤트</strong>
+              <span class="blind">평가만 받아도 선착순 스타벅스 증정</span>
+            </p>
+            <a href="#">자세히 보기</a>
+          </div>
+        </div>
+      </div>
+    </section> <!-- //main-visual -->
+    <div class="search-sec">
+      <div class="container">
+        <section class="car-search cont-wrap">
+          <h2 class="blind">차량 검색</h2>
+          <div class="search-wrap clear">
+            <strong class="sub-title">원하는 차를 찾아보세요!</strong>
+            <div class="input-box">
+              <input type="text" placeholder="찾으시는 차량명을 입력하세요">
+              <span class="btn-wrap">
+                <button><span class="blind">검색</span></button>
+              </span>
+            </div>
+          </div>
+          <div class="select-wrap clear">
+            <div class="select-box">
+              <button type="button" class="select-label">제조사</button>
+              <ul class="option-list">
+                <li>
+                  <em class="option-title option-item">국산</em>
+                  <ul class="option-sub-list">
+                    <li class="option-item option-sub-item">기아</li>
+                    <li class="option-item option-sub-item">현대</li>
+                    <li class="option-item option-sub-item">제네시스</li>
+                    <li class="option-item option-sub-item">쉐보레(대우)</li>
+                  </ul>
+                </li>
+                <li>
+                  <em class="option-title option-item">수입</em>
+                  <ul class="option-sub-list">
+                    <li class="option-item option-sub-item">벤츠</li>
+                    <li class="option-item option-sub-item">BMW</li>
+                    <li class="option-item option-sub-item">아우디</li>
+                    <li class="option-item option-sub-item">미니</li>
+                  </ul>
+                </li>
+              </ul>
+            </div> <!-- //select-box -->
+            <div class="select-box disabled">
+              <button type="button" class="select-label">모델</button>
+            </div>
+            <div class="select-box disabled">
+              <button type="button" class="select-label">세부모델</button>
+            </div>
+            <span class="btn-wrap">
+              <button class="btn btn-blue">검색</button>
+            </span>
+          </div>
+        </section> <!-- //car-search -->
+        <div class="deal-sec clear">
+          <section class="deal-cont buy-sec">
+            <h2 class="main-title">사고 싶어요</h2>
+            <div class="cont-wrap">
+              <div class="cont1">
+                <h3 class="sub-title">어떤 차종을 생각 중이세요?</h3>
+                <div class="swipe-container">
+                  <ul class="car-type-list clear">
+                    <li class="car-type-item car-type-item-all">
+                      <input type="checkbox" name="cartype" id="carTypeDefault" checked>
+                      <label for="carTypeDefault" class="chk-cartype">
+                        <!-- <span class="chk-box"></span> -->
+                        <span class="chk-text">전체</span>
+                      </label>
+                    </li>
+                    <li class="car-type-item car-type-item-1">
+                      <input type="checkbox" name="cartype" id="carType01">
+                      <label for="carType01" class="chk-cartype">
+                        <span class="chk-text">경차</span>
+                      </label>
+                    </li>
+                    <li class="car-type-item car-type-item-2">
+                      <input type="checkbox" name="cartype" id="carType02">
+                      <label for="carType02" class="chk-cartype">
+                        <span class="chk-text">소형차</span>
+                      </label>
+                    </li>
+                    <li class="car-type-item car-type-item-3">
+                      <input type="checkbox" name="cartype" id="carType03">
+                      <label for="carType03" class="chk-cartype">
+                        <span class="chk-text">준중형차</span>
+                      </label>
+                    </li>
+                    <li class="car-type-item car-type-item-4">
+                      <input type="checkbox" name="cartype" id="carType04">
+                      <label for="carType04" class="chk-cartype">
+                        <span class="chk-text">중형차</span>
+                      </label>
+                    </li>
+                  </ul>
+                </div> <!-- //swipe-container -->
+              </div> <!-- //cont1 -->
+              <div class="cont2">
+                <h3 class="sub-title">예산이 어떻게 되시나요?</h3>
+                <div class="range-container">
+                  <!-- !!!!!!!!!!!!!!!!!!!!!!!!! 보류 !!!!!!!!!!!!!!!!!!!!!!!!! -->
+                  <div class="budget-range">
+                    <div class="range-track"></div>
+                    <input type="range" min="0" max="100000000" value="0" id="h">
+                    <input type="range" min="100000" max="100000000" value="100000000" id="h2">
+                  </div>
+                  <div class="range-text clear">
+                    <span>0원</span>
+                    <span>1억원이상</span>
+                  </div>
+                  <p class="range-msg">
+                    <em>0원</em>에서 <em>1억원이상</em> 까지 보고 싶어요
+                  </p>
+                  <!-- !!!!!!!!!!!!!!!!!!!!!!!!! 보류 !!!!!!!!!!!!!!!!!!!!!!!!! -->
+                </div> <!-- //range-container -->
+              </div> <!-- //cont2 -->
+              <div class="btn-wrap">
+                <button class="btn btn-blue">
+                  차량 <span class="result-text">2,885</span> 대 보기
+                </button>
+              </div>
+            </div> <!-- //cont-wrap -->
+          </section> <!-- //deal-cont.buy-sec -->
+          <section class="deal-cont sell-sec">
+            <h2 class="main-title">팔고 싶어요</h2>
+            <div class="cont-wrap">
+              <div class="sell-box sell-visit">
+                <p><span>현대글로비스 오토벨</span>이<br>직접 찾아가 한 번에!</p>
+                <a href="#">오토벨 방문견적</a>
+              </div>
+              <div class="sell-box sell-check">
+                <p><span>정확한 내차시세</span><br>번호만 입력하면 내 차 시세 확인!</p>
+                <a href="#">내차시세 조회하기</a>
+              </div>
+            </div>
+          </section>
+        </div> <!-- //deal-sec -->
+      </div> <!-- //container -->
+    </div> <!-- //search-sec -->
+    <section class="jindan-sec">
+      <h2 class="blind">오토벨 진단차</h2>
+      <div class="container">
+        <div class="sec-header">
+          <strong class="sec-title">오토벨이 직접 문콕까지 꼼꼼하게 확인하고 엄선했어요</strong>
+          <p class="sec-link"><a href="#">오토벨 진단차 바로가기</a></p>
+        </div> <!-- //sec-header -->
+        <div class="sec-cont clear">
+          <div class="banner-link-box">
+            <a href="#" class="banner-link">
+              <p class="banner-link-text">
+                <strong>오토벨 진단차를 믿고<br>선택해도 되는 이유</strong>
+                중고차가 어려운 분들께 추천해요!
+              </p>
+              <span class="banner-more">자세히 보기</span>
+            </a>
+          </div> <!-- //banner-link -->
+          <ul class="card-list jindan-list clear">
+            <li class="card">
+              <a href="#" class="card-link">
+                <div class="card-thumb">
+                  <img src="assets/jindan/jindan_car_01.jpg" alt="볼보 XC60(2세대) 인스크립션 B5 AWD">
+                  <div class="card-opts clear">
+                    <em class="card-opt jindan"><span class="blind">진단</span></em>
+                    <em class="card-opt vr"><span class="blind">360° vr</span></em>
+                  </div>
+                </div>
+                <div class="card-text">
+                  <strong class="card-tit">볼보 XC60(2세대) 인스크립션 B5 AWD</strong>
+                  <dl class="card-desc clear">
+                    <div class="small-info">
+                      <dt class="blind">연식: </dt>
+                      <dd>2021</dd>
+                    </div>
+                    <div class="small-info">
+                      <dt class="blind">주행거리: </dt>
+                      <dd>43,351km</dd>
+                    </div>
+                    <div class="price">
+                      <dt class="blind">가격: </dt>
+                      <dd>
+                        <span>5,790</span>만원
+                      </dd>
+                    </div>
+                  </dl>
+                </div>
+              </a>
+            </li>
+            <li class="card">
+              <a href="#" class="card-link">
+                <div class="card-thumb">
+                  <img src="assets/jindan/jindan_car_02.jpg" alt="볼보 XC60(2세대) 인스크립션 B5 AWD">
+                  <div class="card-opts clear">
+                    <em class="card-opt jindan"><span class="blind">진단</span></em>
+                    <em class="card-opt vr"><span class="blind">360° vr</span></em>
+                  </div>
+                </div>
+                <div class="card-text">
+                  <strong class="card-tit">볼보 XC60(2세대) 인스크립션 B5 AWD</strong>
+                  <dl class="card-desc clear">
+                    <div class="small-info">
+                      <dt class="blind">연식: </dt>
+                      <dd>2021</dd>
+                    </div>
+                    <div class="small-info">
+                      <dt class="blind">주행거리: </dt>
+                      <dd>43,351km</dd>
+                    </div>
+                    <div class="price">
+                      <dt class="blind">가격: </dt>
+                      <dd>
+                        <span>5,790</span>만원
+                      </dd>
+                    </div>
+                  </dl>
+                </div>
+              </a>
+            </li>
+            <li class="card">
+              <a href="#" class="card-link">
+                <div class="card-thumb">
+                  <img src="assets/jindan/jindan_car_03.jpg" alt="볼보 XC60(2세대) 인스크립션 B5 AWD">
+                  <div class="card-opts clear">
+                    <em class="card-opt jindan"><span class="blind">진단</span></em>
+                    <em class="card-opt vr"><span class="blind">360° vr</span></em>
+                  </div>
+                </div>
+                <div class="card-text">
+                  <strong class="card-tit">볼보 XC60(2세대) 인스크립션 B5 AWD</strong>
+                  <dl class="card-desc clear">
+                    <div class="small-info">
+                      <dt class="blind">연식: </dt>
+                      <dd>2021</dd>
+                    </div>
+                    <div class="small-info">
+                      <dt class="blind">주행거리: </dt>
+                      <dd>43,351km</dd>
+                    </div>
+                    <div class="price">
+                      <dt class="blind">가격: </dt>
+                      <dd>
+                        <span>5,790</span>만원
+                      </dd>
+                    </div>
+                  </dl>
+                </div>
+              </a>
+            </li>
+            <li class="card">
+              <a href="#" class="card-link">
+                <div class="card-thumb">
+                  <img src="assets/jindan/jindan_car_04.jpg" alt="볼보 XC60(2세대) 인스크립션 B5 AWD">
+                  <div class="card-opts clear">
+                    <em class="card-opt jindan"><span class="blind">진단</span></em>
+                    <em class="card-opt vr"><span class="blind">360° vr</span></em>
+                  </div>
+                </div>
+                <div class="card-text">
+                  <strong class="card-tit">볼보 XC60(2세대) 인스크립션 B5 AWD</strong>
+                  <dl class="card-desc clear">
+                    <div class="small-info">
+                      <dt class="blind">연식: </dt>
+                      <dd>2021</dd>
+                    </div>
+                    <div class="small-info">
+                      <dt class="blind">주행거리: </dt>
+                      <dd>43,351km</dd>
+                    </div>
+                    <div class="price">
+                      <dt class="blind">가격: </dt>
+                      <dd>
+                        <span>5,790</span>만원
+                      </dd>
+                    </div>
+                  </dl>
+                </div>
+              </a>
+            </li>
+          </ul> <!-- //card-list.jindan-list -->
+        </div> <!-- //sec-cont -->
+      </div> <!-- //container -->
+    </section> <!-- //jindan-sec -->
+    <section class="partner-sec">
+      <h2 class="blind">오토벨 제휴업체/상품</h2>
+      <div class="container">
+        <div class="sec-header">
+          <strong class="sec-title">오토벨과 함께해서 안심 할 수 있어요</strong>
+          <p class="sec-link"><a href="#">오토벨 제휴차 바로가기</a></p>
+        </div> <!-- //sec-header -->
+        <div class="sec-cont">
+          <div class="tab-area clear">
+            <ul class="tabs">
+              <li class="tab-item">
+                <input type="radio" name="partners" id="tab1" class="tab-radio" checked>
+                <label for="tab1" class="tab">매매단지몰</label>
+                <div id="tabContent1" class="tab-cont clear">
+                  <div class="tab-header">
+                    <strong class="sec-title">오토벨과 파트너 사의<br>전국 매매단지 차량을<br>한 곳에!</strong>
+                    <p class="sec-link"><a href="#">매매단지몰 전체보기</a></p>
+                  </div>
+                  <div class="tab-main">
+                    <ul class="card-list partner-list clear">
+                      <li class="card">
+                        <a href="#" class="card-link">
+                          <div class="card-thumb">
+                            <img src="assets/partner/partner_tab01_01.png" alt="">
+                          </div>
+                          <div class="card-text">
+                            <strong class="card-tit">D-AUTO MALL</strong>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="card">
+                        <a href="#" class="card-link">
+                          <div class="card-thumb">
+                            <img src="assets/partner/partner_tab01_02.png" alt="">
+                          </div>
+                          <div class="card-text">
+                            <strong class="card-tit">마트매매단지</strong>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="card">
+                        <a href="#" class="card-link">
+                          <div class="card-thumb">
+                            <img src="assets/partner/partner_tab01_03.png" alt="">
+                          </div>
+                          <div class="card-text">
+                            <strong class="card-tit">M World</strong>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="card">
+                        <a href="#" class="card-link">
+                          <div class="card-thumb">
+                            <img src="assets/partner/partner_tab01_04.png" alt="">
+                          </div>
+                          <div class="card-text">
+                            <strong class="card-tit">경기매매단지</strong>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div> <!-- //tab-cont -->
+              </li>
+              <li class="tab-item">
+                <input type="radio" name="partners" id="tab2" class="tab-radio">
+                <label for="tab2" class="tab">법인상사몰</label>
+                <div id="tabContent2" class="tab-cont clear">
+                  <div class="tab-header">
+                    <strong class="sec-title">중고차 업력<br>10년 이상의<br>신뢰 높은 상사의<br>차량을 만나보세요</strong>
+                    <p class="sec-link"><a href="#">법인상사몰 전체보기</a></p>
+                  </div>
+                  <div class="tab-main">
+                    <ul class="card-list partner-list partner-logo-list clear">
+                      <li class="card">
+                        <a href="#" class="card-link">
+                          <div class="card-thumb">
+                            <img src="assets/partner/partner_tab02_01.png" alt="">
+                          </div>
+                          <div class="card-text">
+                            <strong class="card-tit">유카</strong>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="card">
+                        <a href="#" class="card-link">
+                          <div class="card-thumb">
+                            <img src="assets/partner/partner_tab02_02.png" alt="">
+                          </div>
+                          <div class="card-text">
+                            <strong class="card-tit">퍼스트다이렉트</strong>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div> <!-- //tab-cont -->
+              </li>
+              <li class="tab-item">
+                <input type="radio" name="partners" id="tab3" class="tab-radio">
+                <label for="tab3" class="tab">금융인증몰</label>
+                <div id="tabContent3" class="tab-cont clear">
+                  <div class="tab-header">
+                    <strong class="sec-title">깐깐한 금융회사가<br>엄격하게 관리한<br>차량을 만나보세요</strong>
+                    <p class="sec-link"><a href="#">금융인증몰 전체보기</a></p>
+                  </div>
+                  <div class="tab-main">
+                    <ul class="card-list partner-list partner-logo-list clear">
+                      <li class="card wide">
+                        <a href="#" class="card-link">
+                          <div class="card-thumb">
+                            <img src="assets/partner/partner_tab03_01.png" alt="">
+                          </div>
+                          <div class="card-text">
+                            <strong class="card-tit">현대캐피탈</strong>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="card wide">
+                        <a href="#" class="card-link">
+                          <div class="card-thumb">
+                            <img src="assets/partner/partner_tab03_02.png" alt="">
+                          </div>
+                          <div class="card-text">
+                            <strong class="card-tit">신한 마이카</strong>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div> <!-- //tab-cont -->
+              </li>
+              <li class="tab-item">
+                <input type="radio" name="partners" id="tab4" class="tab-radio">
+                <label for="tab4" class="tab">브랜드몰</label>
+                <div id="tabContent4" class="tab-cont clear">
+                  <div class="tab-header">
+                    <strong class="sec-title">제조사가<br>직접 관리하는<br>수입차</strong>
+                    <p class="sec-link"><a href="#">브랜드몰 전체보기</a></p>
+                  </div>
+                  <div class="tab-main">
+                    <ul class="card-list partner-list partner-logo-list clear">
+                      <li class="card">
+                        <a href="#" class="card-link">
+                          <div class="card-thumb">
+                            <img src="assets/partner/partner_tab04_01.png" alt="">
+                          </div>
+                          <div class="card-text">
+                            <strong class="card-tit">BMW</strong>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="card">
+                        <a href="#" class="card-link">
+                          <div class="card-thumb">
+                            <img src="assets/partner/partner_tab04_02.png" alt="">
+                          </div>
+                          <div class="card-text">
+                            <strong class="card-tit">MINI</strong>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="card">
+                        <a href="#" class="card-link">
+                          <div class="card-thumb">
+                            <img src="assets/partner/partner_tab04_03.png" alt="">
+                          </div>
+                          <div class="card-text">
+                            <strong class="card-tit">아우디</strong>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div> <!-- //tab-cont -->
+              </li>
+            </ul> <!-- //tab-item -->
+          </div> <!-- //tab-area -->
+        </div> <!-- //sec-cont -->
+      </div> <!-- //container -->
+    </section> <!-- //partner-sec -->
+    <section class="recommend-sec">
+      <h2 class="blind">오토벨 매물 추천</h2>
+      <div class="container">
+        <div class="sec-header">
+          <strong class="sec-title">오토벨이 청정매물만 쏙쏙 골라서 추천해드려요</strong>
+        </div> <!-- //sec-header -->
+        <div class="sec-cont">
+          <div class="tab-area clear">
+            <ul class="tabs">
+              <li class="tab-item">
+                <input type="radio" name="recommend" id="rcmdTab1" class="tab-radio" checked>
+                <label for="rcmdTab1" class="tab">여행가기 좋은 차</label>
+                <div id="rcmdTabContent1" class="tab-cont">
+                  <ul class="card-list rcmd-list clear">
+                    <li class="rcmd-list-header">
+                      <p>
+                        <strong>우리는 힐링중</strong>
+                        <span>#여행을떠나요#불멍</span>
+                      </p>
+                    </li>
+                    <li class="card">
+                      <a href="#" class="card-link">
+                        <div class="card-thumb">
+                          <img src="assets/jindan/jindan_car_02.jpg" alt="">
+                          <div class="card-opts clear">
+                            <em class="card-opt jindan"><span class="blind">진단</span></em>
+                            <em class="card-opt vr"><span class="blind">360° vr</span></em>
+                          </div>
+                        </div>
+                        <div class="card-text">
+                          <strong class="card-tit">볼보 XC60(2세대) 인스크립션 B5 AWD</strong>
+                          <dl class="card-desc clear">
+                            <div class="small-info">
+                              <dt class="blind">연식: </dt>
+                              <dd>2021</dd>
+                            </div>
+                            <div class="small-info">
+                              <dt class="blind">주행거리: </dt>
+                              <dd>43,351km</dd>
+                            </div>
+                            <div class="small-info">
+                              <dt class="blind">연료: </dt>
+                              <dd>디젤</dd>
+                            </div>
+                            <div class="price">
+                              <dt class="blind">가격: </dt>
+                              <dd>
+                                <span>5,790</span>만원
+                              </dd>
+                            </div>
+                          </dl>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="card">
+                      <a href="#" class="card-link">
+                        <div class="card-thumb">
+                          <img src="assets/jindan/jindan_car_02.jpg" alt="">
+                          <div class="card-opts clear">
+                            <em class="card-opt jindan"><span class="blind">진단</span></em>
+                            <em class="card-opt vr"><span class="blind">360° vr</span></em>
+                          </div>
+                        </div>
+                        <div class="card-text">
+                          <strong class="card-tit">볼보 XC60(2세대) 인스크립션 B5 AWD</strong>
+                          <dl class="card-desc clear">
+                            <div class="small-info">
+                              <dt class="blind">연식: </dt>
+                              <dd>2021</dd>
+                            </div>
+                            <div class="small-info">
+                              <dt class="blind">주행거리: </dt>
+                              <dd>43,351km</dd>
+                            </div>
+                            <div class="small-info">
+                              <dt class="blind">연료: </dt>
+                              <dd>디젤</dd>
+                            </div>
+                            <div class="price">
+                              <dt class="blind">가격: </dt>
+                              <dd>
+                                <span>5,790</span>만원
+                              </dd>
+                            </div>
+                          </dl>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="card">
+                      <a href="#" class="card-link">
+                        <div class="card-thumb">
+                          <img src="assets/jindan/jindan_car_02.jpg" alt="">
+                          <div class="card-opts clear">
+                            <em class="card-opt jindan"><span class="blind">진단</span></em>
+                            <em class="card-opt vr"><span class="blind">360° vr</span></em>
+                          </div>
+                        </div>
+                        <div class="card-text">
+                          <strong class="card-tit">볼보 XC60(2세대) 인스크립션 B5 AWD</strong>
+                          <dl class="card-desc clear">
+                            <div class="small-info">
+                              <dt class="blind">연식: </dt>
+                              <dd>2021</dd>
+                            </div>
+                            <div class="small-info">
+                              <dt class="blind">주행거리: </dt>
+                              <dd>43,351km</dd>
+                            </div>
+                            <div class="small-info">
+                              <dt class="blind">연료: </dt>
+                              <dd>디젤</dd>
+                            </div>
+                            <div class="price">
+                              <dt class="blind">가격: </dt>
+                              <dd>
+                                <span>5,790</span>만원
+                              </dd>
+                            </div>
+                          </dl>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="card">
+                      <a href="#" class="card-link">
+                        <div class="card-thumb">
+                          <img src="assets/jindan/jindan_car_02.jpg" alt="">
+                          <div class="card-opts clear">
+                            <em class="card-opt jindan"><span class="blind">진단</span></em>
+                            <em class="card-opt vr"><span class="blind">360° vr</span></em>
+                          </div>
+                        </div>
+                        <div class="card-text">
+                          <strong class="card-tit">볼보 XC60(2세대) 인스크립션 B5 AWD</strong>
+                          <dl class="card-desc clear">
+                            <div class="small-info">
+                              <dt class="blind">연식: </dt>
+                              <dd>2021</dd>
+                            </div>
+                            <div class="small-info">
+                              <dt class="blind">주행거리: </dt>
+                              <dd>43,351km</dd>
+                            </div>
+                            <div class="small-info">
+                              <dt class="blind">연료: </dt>
+                              <dd>디젤</dd>
+                            </div>
+                            <div class="price">
+                              <dt class="blind">가격: </dt>
+                              <dd>
+                                <span>5,790</span>만원
+                              </dd>
+                            </div>
+                          </dl>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="card">
+                      <a href="#" class="card-link">
+                        <div class="card-thumb">
+                          <img src="assets/jindan/jindan_car_02.jpg" alt="">
+                          <div class="card-opts clear">
+                            <em class="card-opt jindan"><span class="blind">진단</span></em>
+                            <em class="card-opt vr"><span class="blind">360° vr</span></em>
+                          </div>
+                        </div>
+                        <div class="card-text">
+                          <strong class="card-tit">볼보 XC60(2세대) 인스크립션 B5 AWD</strong>
+                          <dl class="card-desc clear">
+                            <div class="small-info">
+                              <dt class="blind">연식: </dt>
+                              <dd>2021</dd>
+                            </div>
+                            <div class="small-info">
+                              <dt class="blind">주행거리: </dt>
+                              <dd>43,351km</dd>
+                            </div>
+                            <div class="small-info">
+                              <dt class="blind">연료: </dt>
+                              <dd>디젤</dd>
+                            </div>
+                            <div class="price">
+                              <dt class="blind">가격: </dt>
+                              <dd>
+                                <span>5,790</span>만원
+                              </dd>
+                            </div>
+                          </dl>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="card">
+                      <a href="#" class="card-link">
+                        <div class="card-thumb">
+                          <img src="assets/jindan/jindan_car_02.jpg" alt="">
+                          <div class="card-opts clear">
+                            <em class="card-opt jindan"><span class="blind">진단</span></em>
+                            <em class="card-opt vr"><span class="blind">360° vr</span></em>
+                          </div>
+                        </div>
+                        <div class="card-text">
+                          <strong class="card-tit">볼보 XC60(2세대) 인스크립션 B5 AWD</strong>
+                          <dl class="card-desc clear">
+                            <div class="small-info">
+                              <dt class="blind">연식: </dt>
+                              <dd>2021</dd>
+                            </div>
+                            <div class="small-info">
+                              <dt class="blind">주행거리: </dt>
+                              <dd>43,351km</dd>
+                            </div>
+                            <div class="small-info">
+                              <dt class="blind">연료: </dt>
+                              <dd>디젤</dd>
+                            </div>
+                            <div class="price">
+                              <dt class="blind">가격: </dt>
+                              <dd>
+                                <span>5,790</span>만원
+                              </dd>
+                            </div>
+                          </dl>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div> <!-- //container -->
+    </section> <!-- //recommend-sec -->
+    <div class="more-sec">
+      <p class="sec-link"><a href="#">더 많은 소식 보기</a></p>
+      <div class="banner-bottom">
+        <a href="#">
+          <img src="assets/hy-main-banner-A1-1129.png" alt="새 차는 못사는데, 차는 필요할 때 현대캐피탈 디지털 중고차론">
+        </a>
+      </div>
+    </div>
+  </main> <!-- //main -->
+  <footer>
+    <div class="footer-menu">
+      <h2 class="blind">하단 메뉴</h2>
+      <div class="container">
+        <ul class="clear">
+          <li><a href="#">회사소개</a></li>
+          <li><a href="#">제휴문의</a></li>
+          <li><a href="#">이용약관</a></li>
+          <li><a href="#"><strong>개인정보처리방침</strong></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-company">
+      <h2 class="blind">기업 정보</h2>
+      <div class="container clear">
+        <p class="logo">
+          <a href="#"><img src="assets/h2-logo-glovis-gray.png" alt="현대 글로비스"></a>
+        </p>
+        <address>
+          <dl class="company-info clear">
+            <div class="info-wrap line">
+              <dt class="blind">회사명</dt>
+              <dd>현대글로비스㈜</dd>
+            </div>
+            <div class="info-wrap line">
+              <dt>대표자</dt>
+              <dd>이규복</dd>
+            </div>
+            <div class="info-wrap">
+              <dt class="blind">주소</dt>
+              <dd>서울특별시 성동구 왕십리로 83-21, 아크로 서울포레스트</dd>
+            </div>
+            <div class="info-wrap line">
+              <dt>사업자등록번호</dt>
+              <dd>106-81-97118</dd>
+            </div>
+            <div class="info-wrap">
+              <dt>통신판매업신고</dt>
+              <dd>서울성동-00721</dd>
+            </div>
+          </dl>
+          <p>현대글로비스(주)는 통신판매중개자이며, 통신판매의 당사자가 아닙니다.</p>
+          <p>상품, 상품정보제공 및 거래에 관한 의무와 책임은 판매자에게 있습니다.</p>
+          <small class="copy">COPYRIGHT (C) HYUNDAI GLOVIS CO., LTD. ALL RIGHTS RESERVED.</small>
+        </address>
+        <div class="footer-cs">
+          <strong>오토벨 고객센터</strong>
+          <dl class="cs-info clear">
+            <div class="info-wrap">
+              <dt class="blind">운영시간</dt>
+              <dd class="time">평일 9시~18시</dd>
+            </div>
+            <div class="info-wrap">
+              <dt class="blind">고객센터 전화번호</dt>
+              <dd class="tel">1600-0080</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
