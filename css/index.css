@@ -16,6 +16,7 @@ header {
 
 .header-cont .logo {
   float: left;
+  padding-left: 10px;
   transform: translateY(50%);
 }
 
@@ -80,7 +81,7 @@ nav {
 .util-menu .srch {
   background-color: #F8F9FC;
   position: relative;
-  padding: 0 5px 0 105px;
+  padding: 0 5px 0 110px;
   border-radius: 25px;
   cursor: pointer;
 }
@@ -88,9 +89,10 @@ nav {
 .util-menu .srch > span {
   position: absolute;
   top: 5px;
-  left: 11px;
+  left: 0;
   color: #666;
   font-size: 12px;
+  transform: translateX(23%);
 }
 
 .util-menu button {
@@ -134,16 +136,13 @@ nav {
 
 .util-user > li {
   float: left;
+  margin-left: 15px;
   color: #8B8E93;
   line-height: 40px;
 }
 
-.util-user > li ~ li {
-  margin-left: 10px;
-}
-
 .util-cs button {
-  padding: 0 5px;
+  padding-right: 10px;
   line-height: 40px;
 }
 
