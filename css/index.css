@@ -81,28 +81,24 @@ nav {
 .util-menu .srch {
   background-color: #F8F9FC;
   position: relative;
-  padding: 0 5px 0 110px;
+  padding-right: 10px;
   border-radius: 25px;
-  cursor: pointer;
-}
-
-.util-menu .srch > span {
-  position: absolute;
-  top: 5px;
-  left: 0;
-  color: #666;
-  font-size: 12px;
-  transform: translateX(23%);
 }
 
 .util-menu button {
-  background: no-repeat center center;
+  background: no-repeat center;
   width: 30px;
   height: 30px;
 }
 
 .util-menu .srch button {
   background-image: url(../assets/icon/ico-header-search.svg);
+  background-position-x: right;
+  width: auto;
+  padding: 0 30px 0 20px;
+  color: #666;
+  font-size: 12px;
+  line-height: 30px;
 }
 
 .util-menu .alarm button {
