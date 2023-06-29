@@ -215,6 +215,35 @@ main {
   vertical-align: sub;
 }
 
+.main-visual .swiper-pagination {
+  bottom: 30%;
+}
+
+.main-visual .swiper-pagination .swiper-pagination-bullet {
+  background: none;
+  position: relative;
+  margin: 0 12px;
+  opacity: 1;
+}
+
+.main-visual .swiper-pagination-bullet button {
+  background-color: #aaa;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  border-radius: 10px;
+  transform: translateX(-50%);
+  transition: .2s;
+  transition-property: width, background-color;
+}
+
+.main-visual .swiper-pagination-bullet-active button {
+  background-color: #007AFF;
+  width: 30px;
+}
+
 /* Search Section */
 .search-sec {
   background-color: #F3F6FA;

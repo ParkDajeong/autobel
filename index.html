@@ -9,10 +9,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <!-- CSS -->
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/index.css">
+  <!-- JS -->
+  <script src="js/index.js" defer></script>
 </head>
 <body>
   <!-- TODO: 스킵메뉴 구현 -->
@@ -87,15 +92,50 @@
       <h2 class="blind">메인 배너 슬라이드</h2>
       <div class="container">
         <!-- TODO: 메인 비주얼 슬라이드 구현 -->
-        <div class="banner">
-          <div class="banner-box">
-            <img src="assets/banner/banner01.png" alt="">
-            <p class="blind">
-              <strong class="blind">오토벨 방문견적 이벤트</strong>
-              <span class="blind">평가만 받아도 선착순 스타벅스 증정</span>
-            </p>
-            <a href="#">자세히 보기</a>
-          </div>
+        <div class="swiper">
+          <ul class="swiper-wrapper banner-box">
+            <li class="swiper-slide banner">
+              <img src="assets/banner/banner01.png" alt="">
+              <p class="blind">
+                <strong class="blind">오토벨 방문견적 이벤트</strong>
+                <span class="blind">평가만 받아도 선착순 스타벅스 증정.</span>
+              </p>
+              <a href="#">자세히 보기</a>
+            </li>
+            <li class="swiper-slide banner">
+              <img src="assets/banner/banner02.png" alt="">
+              <p class="blind">
+                <strong class="blind">오토벨 내차팔기</strong>
+                <span class="blind">중고차 팔기 불안할 때. 누르세요 안심벨, 오토벨.</span>
+              </p>
+              <a href="#">자세히 보기</a>
+            </li>
+            <li class="swiper-slide banner">
+              <img src="assets/banner/banner03.png" alt="">
+              <p class="blind">
+                <strong class="blind">오토벨 내차사기</strong>
+                <span class="blind">중고차 사기 불안할 때. 누르세요 안심벨, 오토벨.</span>
+              </p>
+              <a href="#">자세히 보기</a>
+            </li>
+            <li class="swiper-slide banner">
+              <img src="assets/banner/banner04.png" alt="">
+              <p class="blind">
+                <strong class="blind">오토벨 진단차</strong>
+                <span class="blind">오토벨이 직접 진단하고, 360˚VR로 생생하게 보여드려요.</span>
+              </p>
+              <a href="#">자세히 보기</a>
+            </li>
+            <li class="swiper-slide banner">
+              <img src="assets/banner/banner05.png" alt="">
+              <p class="blind">
+                <strong class="blind">오토벨 허위매물 필터링</strong>
+                <span class="blind">오토벨은 매물청정지대. 맘 놓고 중고차 구매하세요.</span>
+              </p>
+              <a href="#">자세히 보기</a>
+            </li>
+          </ul>
+          <ul class="swiper-pagination"></ul>
         </div>
       </div>
     </section> <!-- //main-visual -->
