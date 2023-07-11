@@ -20,7 +20,6 @@
   <script src="js/index.js" defer></script>
 </head>
 <body>
-  <!-- TODO: 스킵메뉴 구현 -->
   <header>
     <div class="header-cont">
       <div class="container clear">
@@ -41,105 +40,6 @@
             <li><a href="#">스마트옥션</a></li>
           </ul>
         </nav> <!-- //nav -->
-        <ul class="util-menu">
-          <!-- TODO: 차량검색 메뉴 구현 -->
-          <li class="srch">
-            <button type="button">
-              <span>차량검색 하러가기</span>
-              <span class="blind">검색메뉴 펼치기</span>
-            </button>
-            <section class="car-srch-menu">
-              <h3 class="blind">차량 상세검색</h3>
-              <div class="container">
-                <!-- srch input box -->
-                <div class="srch-input-area">
-                  <div class="input-box">
-                    <input type="text" placeholder="찾으시는 차량명을 입력하세요">
-                    <span class="btn-wrap">
-                      <button><span class="blind">검색</span></button>
-                    </span>
-                  </div>
-                </div>
-                <div class="keyword-area">
-                  <ul class="keyword-list">
-                    <li class="head-keyword">
-                      <a href="#">출퇴근용차</a>
-                    </li>
-                    <li class="head-keyword">
-                      <a href="#">사회초년생차</a>
-                    </li>
-                    <li class="head-keyword">
-                      <a href="#">신차같은차</a>
-                    </li>
-                    <li class="head-keyword">
-                      <a href="#">360˚VR차</a>
-                    </li>
-                    <li class="head-keyword">
-                      <a href="#">친환경차</a>
-                    </li>
-                    <li class="head-keyword">
-                      <a href="#">억소리나는차</a>
-                    </li>
-                    <li class="head-keyword">
-                      <a href="#">캠핑용차</a>
-                    </li>
-                    <li class="head-keyword">
-                      <a href="#">알록달록차</a>
-                    </li>
-                    <li class="head-keyword">
-                      <a href="#">홈서비스차</a>
-                    </li>
-                    <li class="head-keyword">
-                      <a href="#">속도매니아</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="srch-word-area">
-                  <div>
-                    <h3>최근 검색어</h3>
-                    <div>
-                      <p>최근 검색어가 없습니다.</p>
-                    </div>
-                  </div>
-                  <div>
-                    <h3>추천 검색어</h3>
-                    <ul>
-                      <li><a href="#">LF쏘나타 뉴 라이즈</a></li>
-                      <li><a href="#">올 뉴K7</a></li>
-                      <li><a href="#">G70</a></li>
-                      <li><a href="#">더 뉴레이</a></li>
-                      <li><a href="#">EQ900</a></li>
-                      <li><a href="#">더 뉴쏘렌토</a></li>
-                      <li><a href="#">코나</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="btn-wrap">
-                <button type="button" class="btn-close">
-                  <img src="assets/icon/ico-header-layer-close.png" alt="메뉴 닫기">
-                </button>
-              </div>
-            </section>
-          </li>
-          <!-- TODO: 알림, 관심차량 로그인 모달 구현 -->
-          <li class="alarm">
-            <button type="button">
-              <span class="blind">알림</span>
-            </button>
-          </li>
-          <li class="fav">
-            <button type="button">
-              <span class="blind">관심차량</span>
-            </button>
-          </li>
-          <!-- TODO: 메뉴 슬라이드 구현 -->
-          <li class="menu">
-            <button type="button">
-              <span class="blind">메뉴 펼치기</span>
-            </button>
-          </li>
-        </ul> <!-- //util-menu -->
       </div> <!-- //container -->
     </div> <!-- //header-cont -->
     <div class="util-menu2">
@@ -159,7 +59,6 @@
       </div>
     </div> <!-- //util-menu2 -->
   </header> <!-- //header -->
-  <!-- TODO: 퀵메뉴(사이드 버튼) 추가 구현 -->
   <main>
     <section class="main-visual">
       <h2 class="blind">메인 배너 슬라이드</h2>
@@ -214,7 +113,6 @@
     <div class="search-sec">
       <div class="container">
         <section class="car-search cont-wrap">
-          <!-- TODO: 차량검색 내용 추가 구현 -->
           <h2 class="blind">차량 검색</h2>
           <div class="search-wrap clear">
             <strong class="sub-title">원하는 차를 찾아보세요!</strong>
@@ -250,7 +148,6 @@
                 </li>
               </ul>
             </div> <!-- //select-box -->
-            <!-- TODO: 모델, 세부모델 셀렉트 추가(+ JS) -->
             <div class="select-box disabled">
               <button type="button" class="select-label">모델</button>
             </div>
@@ -308,8 +205,6 @@
               <div class="cont2">
                 <h3 class="sub-title">예산이 어떻게 되시나요?</h3>
                 <div class="range-container">
-                  <!-- FIXME: 예산 range 수정 -->
-                  <!-- !!!!!!!!!!!!!!!!!!!!!!!!! 보류 !!!!!!!!!!!!!!!!!!!!!!!!! -->
                   <div class="budget-range">
                     <div class="range-track"></div>
                     <input type="range" min="0" max="100000000" value="0" id="h">
@@ -322,7 +217,6 @@
                   <p class="range-msg">
                     <em>0원</em>에서 <em>1억원이상</em> 까지 보고 싶어요
                   </p>
-                  <!-- !!!!!!!!!!!!!!!!!!!!!!!!! 보류 !!!!!!!!!!!!!!!!!!!!!!!!! -->
                 </div> <!-- //range-container -->
               </div> <!-- //cont2 -->
               <div class="btn-wrap">
@@ -365,8 +259,6 @@
               <span class="banner-more">자세히 보기</span>
             </a>
           </div> <!-- //banner-link -->
-          <!-- FIXME: 이미지/내용 수정 -->
-          <!-- TODO: 새로고침 구현 -->
           <ul class="card-list jindan-list clear">
             <li class="card">
               <a href="#" class="card-link">
@@ -680,8 +572,6 @@
           <strong class="sec-title">오토벨이 청정매물만 쏙쏙 골라서 추천해드려요</strong>
         </div> <!-- //sec-header -->
         <div class="sec-cont">
-          <!-- FIXME: 이미지/내용 수정 -->
-          <!-- TODO: 새로고침 구현 -->
           <div class="tab-area clear">
             <ul class="tabs">
               <li class="tab-item">

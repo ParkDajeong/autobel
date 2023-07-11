@@ -14,6 +14,10 @@ header {
   transform: rotate(-180deg);
 }
 
+.header-cont > .container {
+  position: static;
+}
+
 .header-cont .logo {
   float: left;
   padding-left: 10px;
@@ -63,54 +67,6 @@ nav {
   height: 11px;
   transform: translateY(-50%);
   background-color: #C6C9CF;
-}
-
-/* Util Menu */
-.util-menu {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-}
-
-.util-menu li {
-  float: left;
-  margin: 0 5px;
-}
-
-.util-menu .srch {
-  background-color: #F8F9FC;
-  position: relative;
-  padding-right: 10px;
-  border-radius: 25px;
-}
-
-.util-menu button {
-  background: no-repeat center;
-  width: 30px;
-  height: 30px;
-}
-
-.util-menu .srch button {
-  background-image: url(../assets/icon/ico-header-search.svg);
-  background-position-x: right;
-  width: auto;
-  padding: 0 30px 0 20px;
-  color: #666;
-  font-size: 12px;
-  line-height: 30px;
-}
-
-.util-menu .alarm button {
-  background-image: url(../assets/icon/ico-header-alarm.svg);
-}
-
-.util-menu .fav button {
-  background-image: url(../assets/icon/ico-header-heart.svg);
-}
-
-.util-menu .menu button {
-  background-image: url(../assets/icon/ico-header-menu.svg);
 }
 
 /* Util Menu 2 */
@@ -243,9 +199,6 @@ main {
 /* Search Section */
 .search-sec {
   background-color: #F3F6FA;
-  /* position: absolute;
-  width: 100%;
-  top: 360px; */
   left: 0;
 }
 
@@ -556,9 +509,6 @@ main {
 }
 
 /* Budget Range */
-
-/* https://codingartistweb.com/2021/06/double-range-slider-html-css-javascript/ */
-
 .range-container {
   background-color: #fff;
   width: 100%;
@@ -593,14 +543,14 @@ main {
   top: 0;
   bottom: 0;
   width: 100%;
-  pointer-events: none; /* 이벤트 (강제) 제어 속성인듯,, */
+  pointer-events: none; /* 이벤트 (강제) 제어 속성 */
   /* outline: none; */
 }
 
 /*
 .budget-range input::-webkit-slider-runnable-track {
-  -webkit-appearance: none; /* ==>> 왜 또 이벤트를 없애지???
-  height: 5px; /* ==>> ????? 왜 위로 올라감,,???
+  -webkit-appearance: none; /* 
+  height: 5px; /* 
 }*/
 
 /* .budget-range input::-moz-range-track {
@@ -625,11 +575,6 @@ main {
   cursor: pointer;
   pointer-events: auto; /* ==> 여기서부터 버튼 이동 가능해짐,,, 왜 일케 하는 걸가? */
 }
-
-/* .budget-range input:active::-webkit-slider-thumb {
-  background-color: #fff;
-  border: 3px solid darkgreen;
-} */
 
 .range-text {
   padding-top: 9px;
@@ -966,7 +911,6 @@ main {
 
 /* ===== Recommend Section */
 .recommend-sec {
-  /* background-color: #007AFF; */
   background: linear-gradient(to bottom, #007AFF 75%, #F3F6FA 75%);
   height: 1035px;
 }
@@ -974,7 +918,6 @@ main {
 .recommend-sec .container {
   width: 1080px;
   padding-top: 80px;
-  /* margin: 0auto; */
 }
 
 .recommend-sec .sec-header {
@@ -1112,10 +1055,6 @@ main {
 /* ===== Footer ===== */
 footer {
   background-color: #F5F6F8;
-}
-
-.footer-cont {
-
 }
 
 .footer-menu {
